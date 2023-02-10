@@ -12,6 +12,9 @@ const AnecdoteForm = () => {
       queryClient.setQueryData('anecdotes', (oldAnecdotes) => {
         return [...oldAnecdotes, newAnecdote]
       })
+    },
+    onError: (error) => {
+      setNotification('Anecdote must be atleast 5 characters!', 2000)
     }
   }
   )
