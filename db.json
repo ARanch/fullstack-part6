@@ -1,12 +1,13 @@
 {
   "anecdotes": [
     {
-      "id": "47145"
+      "id": "47145",
+      "votes": null
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
       "id": "21149",
-      "votes": 4
+      "votes": 5
     },
     {
       "content": "The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
@@ -21,7 +22,7 @@
     {
       "content": "Premature optimization is the root of all evil.",
       "id": "25170",
-      "votes": 0
+      "votes": 1
     },
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
@@ -32,6 +33,51 @@
       "content": "Nogen gange skal man bare lade være med at sige noget.",
       "votes": 0,
       "id": "52T_81U"
+    },
+    {
+      "content": "Ostepølse",
+      "votes": 0,
+      "id": "Iio7qps"
+    },
+    {
+      "content": "ostekage",
+      "votes": 0,
+      "id": "eTQjcnA"
+    },
+    {
+      "content": "pølsemaskine",
+      "votes": 0,
+      "id": "7lRs5km"
+    },
+    {
+      "content": "Ostesovs",
+      "votes": 0,
+      "id": "-ZCheHg"
+    },
+    {
+      "content": "Sovsekanonen",
+      "votes": 0,
+      "id": "5tG3kiC"
+    },
+    {
+      "content": "kommensost",
+      "votes": 0,
+      "id": "Uj48bqf"
+    },
+    {
+      "content": "abakusse",
+      "votes": 0,
+      "id": "FJLutuv"
+    },
+    {
+      "content": "asdfasd",
+      "votes": 0,
+      "id": "lrfH20r"
+    },
+    {
+      "content": "aagads",
+      "votes": 0,
+      "id": "DG_tPjQ"
     }
   ]
 }

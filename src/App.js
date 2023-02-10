@@ -1,14 +1,14 @@
 import AnecdoteForm from './components/AnecdoteForm'
 import Notification from './components/Notification'
 import { useQuery, useMutation, useQueryClient } from 'react-query'
+import { useNotificationSetter } from './NotificationContext'
 
 import { fetchAnecdotes, updateAnecdote } from './services/anecdotes'
 
-// todo Implement retrieving anecdotes from the server using React Query.
-// todo Implement adding a new anecdote using React Query.
-// todo Implement voting for an anecdote using React Query.
+// todo 6.23 implement notification using useReducer
 
 const App = () => {
+  const setNotification = useNotificationSetter()
   const queryClient = useQueryClient() // used for adding or updating data in the cache and server
   const anecdoteMutation = useMutation(updateAnecdote, {
     onSuccess: (updatedAnecdote) => {
@@ -27,6 +27,7 @@ const App = () => {
     console.log('vote')
     anecdote.votes += 1
     anecdoteMutation.mutate(anecdote)
+    setNotification(`You voted '${anecdote.content}'`)
   }
 
   const result = useQuery('anecdotes', fetchAnecdotes)
